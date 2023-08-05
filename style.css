@@ -1,0 +1,999 @@
+@font-face {
+    font-family: gs b;
+    src: url(./gs_bold.ttf);
+}
+@font-face {
+    font-family: gs;
+    src: url(./gs.ttf);
+}
+@font-face {
+    font-family: romy;
+    src: url(./romy.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+
+}
+#main{
+    position: relative;
+    width: 100vw;
+    overflow: hidden;
+
+}
+#loader{
+    width: 100%;
+    background-color:rgb(241 93 88) ;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    padding-bottom: 11vw;
+}
+#loader #stars{
+    position: relative;
+    margin-left: 10%;
+    margin-bottom: 3vw;
+}
+#stars #front{
+    position: absolute;
+}
+#ufoload{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3vw;
+}
+#boycoylogo{
+    height: 3.5vw;
+}
+#page1{
+    position: relative;
+    width: 100vw;
+    background-color: rgb(241 93 88);
+
+}
+#nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 65vw;
+    /* background-color: yellow; */
+    margin-left: 17vw;
+    padding-bottom: 2vw;
+    border-bottom: 0.1vw solid black;
+
+}
+#logo{
+    height: 4vw;
+    overflow: hidden;
+    margin-top: 2vw;
+    position: relative;
+}
+#logo img{
+    height: 3.5vw;
+}
+#navlinks{
+    display: flex;
+    gap: 0.6vw;
+    align-items: center;
+
+    margin-top: 2vw;
+}
+#navlinks a{
+    text-decoration: none;
+    color: black;
+    padding: 0.4vw 1vw;
+    border-radius: 4vw;
+
+    /* background-color: white; */
+    font-size: 1.2vw;
+    font-family: gs;
+    font-weight: 100;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
+}
+#navlinks a:hover{
+    background-color: white;
+}
+#navlinks #homediv{
+    width: 2.3vw;
+    height: 2.3vw;
+    border-radius: 50%;
+    background-color: rgb(54 54 53);
+}
+#homediv #home{
+    margin-left: 0.5vw;
+    margin-top: 0.5vw;
+    position: absolute;
+}
+#homediv #indicator{
+    margin-top: 1.9vw;
+    margin-left: 0.3vw;
+}
+#hero1{
+    width: 65vw;
+    display: flex;
+    align-items: center;
+    gap: 5vw;
+    margin-left: 17vw;
+    margin-bottom: 12vw;
+
+}
+#text1{
+    margin-top: 20vw;
+}
+#text1 h1{
+    font-size: 6.5vw;
+    font-family: gs b ;
+    letter-spacing: -0.4vw;
+    color: rgb(54 54 53);
+    margin-top: -15vw;
+
+}
+#text1 p{
+    font-family: gs;
+    font-size: 1.5vw;
+    color: rgb(218, 217, 217);
+    line-height: 1.3;
+    margin-bottom: 1vw;
+    /* width: 25vw; */
+}
+#text1 #contactbutton a{
+    text-decoration: none;
+    font-size: 1.6vw;
+    color: white;
+    font-family: gs;
+
+}
+#text1 #contactbutton{
+    display: flex;
+
+}
+#contactbutton img{
+    margin-top: 2.3vw;
+    margin-left: 1vw;
+}
+#robot{
+    display: flex;
+}
+#robot #left{
+    position: relative;
+    width: 8vw;
+    height: 8vw;
+    /* margin-top: 14vw; */
+    top: 4vw;
+    left: 3vw;
+
+}
+#robot #right{
+    width: 5vw;
+    height: 8vw;
+    position: relative;
+    top: 10.5vw;
+    left: -1vw;
+    transform: rotate(10deg);
+
+}
+#robot #robotimg{
+    margin-top: -10vw;
+    margin-left: -6vw;
+}
+#linkimages #fb{
+    margin-left: 3vw;
+    margin-top: 6vw;
+
+}
+#linkimages #b1{
+    margin-left: 10vw;
+    margin-top: -2vw;
+    position: relative;
+    z-index: 9;
+}
+#linkimages #google{
+    margin-top: -2vw;
+}
+
+#linkimages #b2{
+    position: relative;
+    /* margin-top: -22vw; */
+    top: -4.5vw;
+    transform: rotate(110deg);
+    margin-left: 5vw;
+}
+#linkimages #twitter{
+    margin-left: -3vw;
+    margin-top: -0.1vw;
+}
+#cloudbg{
+    /* overflow: auto; */
+    width: 100%;
+    /* height: 15vw; */
+    background-color: rgb(220 221 204);
+    margin-top: 10vw;
+}
+#cloud img{
+    position: relative;
+    /* z-index: 9; */
+    margin-top: -12vw;
+    /* margin-left: 2vw; */
+
+}
+/* #three{ */
+    /* width: 12vw; */
+/* } */
+#bg1{
+    margin-left: -2vw;
+}
+.sm2{
+    margin-left: -3vw;
+}
+#bg3{
+    margin-left: -2.3vw;
+    width: 20vw;
+}
+#bg2{
+    margin-left: -2vw;
+    margin-bottom: -3vw;
+    width: 25vw;
+}
+#sm4{
+    margin-left: -2vw;
+}
+#last{
+    width: 13vw;
+    margin-left: 87vw;
+}
+#redclouds{
+    width: 100%;
+    height: 20vw;
+    /* margin-top: -3vw; */
+    position: relative;
+    z-index: 9;
+
+}
+#redclouds #one{
+    position: relative;
+    margin-left: 5vw;
+    top: -2vw;
+}
+#redclouds #two{
+    position: relative;
+    top: -3vw;
+    left: 3vw;
+}
+#redclouds #three{
+    position: relative;
+    z-index: 9;
+    top: 6.5vw;
+    left: 2vw;
+}
+#redclouds #four{
+    position: relative;
+    top: -4vw;
+    left: -2vw;
+
+}
+#redclouds #five{
+    position: relative;
+    top: 7vw;
+    left: -6vw;
+    z-index: 9;
+}
+#redclouds #six{
+    position: relative;
+    top: -2vw;
+    left: -10vw;
+}
+#redclouds #seven{
+    position: relative;
+    top: -4vw;
+    left: -9vw;
+}
+#redclouds #eight{
+    position: relative;
+    top: -4vw;
+    left: 63vw;
+    z-index: 9;
+}
+#redclouds #nine{
+    position: relative;
+    top: -18vw;
+    left: 53vw;
+}
+#redclouds #ten{
+    position: relative;
+    top: -13vw;
+    left: 52vw;
+}
+#page2{
+    position: relative;
+    width: 100vw;
+    background-color: rgb(220 221 204);
+
+}
+#nav2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 65vw;
+    /* background-color: yellow; */
+    margin-left: 17vw;
+    padding-bottom: 2vw;
+    border-bottom: 0.1vw solid black;
+
+}
+#logo2{
+    height: 4vw;
+    overflow: hidden;
+    margin-top: 2vw;
+    position: relative;
+}
+#logo2 img{
+    height: 3.5vw;
+}
+#navlinks2{
+    display: flex;
+    gap: 0.5vw;
+    align-items: center;
+    margin-top: 2vw;
+}
+#navlinks2 a{
+    text-decoration: none;
+    color: black;
+    /* cursor: pointer; */
+    font-size: 1.2vw;
+    font-family: gs;
+    font-weight: 100;
+    padding: 0.4vw 1vw;
+    border-radius: 4vw;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
+}
+#navlinks2 a:hover{
+    background-color: white;
+    color: black;
+}
+
+
+#navlinks2 #apps{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 4.5vw;
+    /* gap: 1vw; */
+    height: 1.7vw;
+    padding: 1.2vw 2.5vw;
+    border-radius: 1.3vw;
+    background-color: rgb(43 43 43);
+}
+#apps a{
+
+    color: rgb(246, 235, 235);
+}
+#apps #indicator2{
+    position: absolute;
+    margin-top: 3.1vw;
+}
+#navlinks2 #apps a:hover{
+    color: rgb(246, 235, 235) ;
+    background-color: none;
+}
+
+
+#hero2{
+    width: 65vw;
+    display: flex;
+    align-items: center;
+    gap: 5vw;
+    margin-left: 17vw;
+    margin-bottom: 12vw;
+
+}
+#downloadicons{
+    display: flex;
+    flex-direction: column;
+    gap: -2vw;
+    margin-top: -17vw;
+}
+#android{
+    margin-top: -0.8vw;
+}
+#downloadtext{
+    width: 7vw;
+    margin-top: -1vw;
+}
+#monitor{
+    margin-top: -6vw;
+}
+#baloon{
+    margin-left: 10vw;
+}
+#monitor #baloon #b1{
+    transform: rotate(-35deg);
+    margin-right: -2vw;
+    position: relative;
+    margin-bottom: -0.7vw;
+
+}
+#monitor #baloon #b3{
+    transform: rotate(25deg);
+    margin-left: -3vw;
+}
+#screen{
+    margin-left: -8vw;
+    margin-top: -1vw;
+    position: relative;
+    z-index: 2;
+}
+#badge{
+    position: relative;
+    z-index: 4;
+    left: 28vw;
+    top: -17vw;
+}
+#photo{
+    position: relative;
+    z-index: 3;
+    top: -21vw;
+    left: 2vw;
+}
+#description{
+    position: relative;
+    top: -18vw;
+    left: -3.5vw;
+}
+#text2{
+    margin-top: -15vw;
+}
+#text2 h1{
+    font-family: gs b;
+    width: 20vw;
+    margin-left: -0.5vw;
+    margin-bottom: -0.7vw;
+}
+#text2 p{
+    width: 11vw;margin-top: 0.2vw;
+    font-family: gs;
+    font-size: 1.2vw;
+}
+#text2 img{
+    margin-left: -2vw;
+    position: relative;
+    top: 1.8vw;
+}
+#mtimage{
+    margin-top: -28vw;
+    width: 100vw;
+    height: 5vw;
+    background-image: url("https://boy-coy.com/images/page3/mountains/bgd.png");
+    background-repeat: repeat-x;
+}
+#mtimage img{
+    margin-left: 66.4vw;
+}
+#bgmounts{
+    width: 100vw;
+    height: 25vw;
+    background-color: rgb(166 143 88);
+}
+#row1 #m1{
+    margin-left: 20vw;
+    margin-top: 4vw;
+}
+#row1 #m2{
+    margin-left: 11vw;
+}
+#row1 #m3{
+    margin-left: 6vw;
+    position: relative;
+    top: -3vw;
+}
+#row1 #m4{
+    margin-left: 7vw;
+    position: relative;
+    top: -2vw;
+}
+
+#row2 #f1{
+    margin-left: 9vw;
+    position: relative;
+    top: -3vw;
+}
+#row2 #f2{
+
+    position: relative;
+    left: 3vw;
+    top: -3vw;
+}
+#row2 #f3{
+    position: relative;
+    top: -1vw;
+    left: -3.5vw;
+}
+#row2 #f4{
+    position: relative;
+    top: -3vw;
+    left: -10vw;
+}
+#row2 #f5{
+    position: relative;
+    top: -15vw;
+    left: 83vw;
+
+}
+#page3{
+    position: relative;
+    width: 100vw;
+    background-color: rgb(166 143 88);
+
+}
+#nav3{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 65vw;
+    /* background-color: yellow; */
+    margin-left: 17vw;
+    padding-bottom: 2vw;
+    border-bottom: 0.1vw solid black;
+
+}
+#logo3{
+    height: 4vw;
+    overflow: hidden;
+    margin-top: 2vw;
+    position: relative;
+}
+#logo3 img{
+    height: 3.5vw;
+}
+#navlinks3{
+    display: flex;
+    gap: 2vw;
+    align-items: center;
+    margin-top: 2vw;
+}
+#navlinks3 #about{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 4.5vw;
+    /* gap: 1vw; */
+    height: 1.7vw;
+    padding: 1.2vw 2.9vw;
+    border-radius: 1.3vw;
+    background-color: rgb(43 43 43);
+}
+#navlinks3 #about a{
+
+    color: rgb(226, 221, 221);
+}
+#about #indicator3{
+    position: absolute;
+    margin-top: 3.1vw;
+}
+#navlinks3 a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.2vw;
+    font-family: gs;
+    font-weight: 100;
+    padding: 0.4vw 1vw;
+    border-radius: 4vw;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
+}
+#navlinks3 a:hover{
+    background-color: white;
+}
+#navlinks3 #about a:hover{
+    color: rgb(226, 221, 221);
+    background-color: initial;
+}
+#hero3{
+    width: 65vw;
+    display: flex;
+    align-items: center;
+    
+    gap: 5vw;
+    margin-left: 17vw;
+    /* margin-bottom: 12vw; */
+    /* margin-top: -18vw; */
+    padding-top: 20vw ;
+
+}
+#hero3 #paper{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: -45vw;
+}
+#hero3 #paper #p1{
+    transform: rotate(-5deg);
+}
+#hero3 #paper #p2{
+    transform: rotate(3deg) scale(0.8);
+    margin-top: -4vw;
+    position: relative;
+    
+    left: -4vw;
+}
+#whitepaper{
+    position: relative;
+    top:15vw;
+    z-index: 4;
+}
+#hero3 #paper #whitepaper h1{
+    font-family: gs b;
+    transform: rotate(-5deg);
+}
+#hero3 #paper #whitepaper p{
+    width: 18vw;
+    transform: rotate(-5deg);
+    margin-top: 1.5vw;
+    line-height: 1.3;
+    font-size: 1vw;
+    font-family: gs;
+    font-weight: 100;
+    margin-left: 0.5vw;
+}
+#goldpaper{
+    position: relative;
+    top: 23vw;
+    z-index: 4;
+}
+#goldpaper h2:nth-child(2){
+    position: relative;
+    top: 4.6vw;
+    transform: rotate(4deg);
+    left: 3vw;
+    font-family: gs;
+    font-weight: 100;
+}
+#goldpaper h2:nth-child(1){
+    position: relative;
+    top: 2.8vw;
+    left: 2vw;
+    transform: rotate(2.5deg);
+    font-family: gs;
+    font-weight: 100;
+}
+#roboparts{
+    display: flex;
+   height: fit-content;
+   width: fit-content;
+   margin-top: -160vh;
+}
+#roboparts #lefthand{
+    width: 4vw;
+    height: 4vw;
+    margin-top: -2.5vw;
+    margin-right: -12.5vw;
+}
+#roboparts #righthand{
+    width: 4vw;
+    height: 4vw;
+    margin-left: -13.5vw;
+    margin-top: -2.4vw;
+    position: relative;
+    z-index: -1;
+}
+#ads{
+    margin-top: -86vw;
+    margin-left: 12vw;
+}
+#ads h1{
+    font-family: gs b;
+    width: 20vw;
+
+}
+#ads p{
+    font-family: gs;
+    font-weight: 100;
+    margin-top: 1vw;
+}
+#ads #adsicons img{
+    margin-top: 2vw;
+}
+#r11{
+    width: 100vw;
+    height: 2.5vw;
+    background-image: url(https://boy-coy.com/images/page4/wave_dark.png);
+    background-repeat: repeat-x;
+    margin-top: -32vw;
+}
+#bgwaves{
+    margin-top: -0.1vw;
+    width: 100vw;
+    height: 5.8vw;
+    background-color: rgb(43 43 43);
+}
+#r22{
+    width: 100vw;
+    height: 5vw;
+    background-image: url(https://boy-coy.com/images/page4/wave_medium.png);
+    background-repeat: repeat-x;
+    margin-top: -3.2vw;
+}
+#bgwaves2{
+    width: 100vw;
+    height: 6.8vw;
+    margin-top: -1.8vw;
+    background-color: rgb(54 54 55);
+}
+#r33{
+    position: relative;
+    z-index: 99;
+    width: 100vw;
+    height: 4.4vw;
+    background-image: url(https://boy-coy.com/images/page4/wave_light.png);
+    background-repeat: repeat-x;
+    margin-top: -4.4vw;
+
+}
+#page4{
+    position: relative;
+    width: 100vw;
+    margin-top: -0.1vw;
+    background-color: rgb(65 64 66);
+
+
+}
+#nav4{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 65vw;
+    /* background-color: yellow; */
+    margin-left: 17vw;
+    padding-bottom: 2vw;
+    border-bottom: 0.1vw solid black;
+    padding-top: 8vw;
+
+}
+#logo4{
+    height: 4vw;
+    overflow: hidden;
+    margin-top: 2vw;
+    position: relative;
+}
+#navlinks4{
+    display: flex;
+    gap: 2vw;
+    align-items: center;
+    margin-top: 2vw;
+}
+#navlinks4 #con{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 4.5vw;
+    /* gap: 1vw; */
+    height: 1.7vw;
+    padding: 1.2vw 3.4vw;
+    border-radius: 1.3vw;
+    background-color: black;
+}
+#navlinks4 #con a{
+
+    color: rgb(193, 187, 187);
+}
+#navlinks4 #con a:hover{
+    color: initial;
+    background-color: initial;
+}
+#con #indicator4{
+    position: absolute;
+    margin-top: 2.6vw;
+}
+#navlinks4 a{
+    text-decoration: none;
+    color: rgb(185, 182, 182);
+    font-size: 1.2vw;
+    font-family: gs;
+    font-weight: 100;
+    padding: 0.4vw 1vw;
+    border-radius: 4vw;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
+}
+#navlinks4 a:hover{
+
+    color: black;
+    background-color: white;
+}
+#navlinks4 #con a:hover{
+    color: rgb(220, 215, 215);
+    background-color: none;
+}
+#hero4{
+    width: 65vw;
+    display: flex;
+    align-items: center;
+    gap: 5vw;
+    margin-left: 17vw;
+    /* margin-bottom: 12vw; */
+    /* margin-top: 5vw; */
+
+}
+#anchor{
+    margin-left: -8vw;
+    margin-top: -11vw;
+}
+#getintouch{
+    margin-left: -16vw;
+    margin-top: -28vw;
+}
+#letter{
+    margin-left: -5vw;
+}
+#cover{
+    margin-bottom: -11.2vw;
+}
+#blank{
+    position: relative;
+    top: 2vw;
+    margin-left: 2vw;
+    height: 20vw;
+    width: 29vw;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
+
+}
+#letter:hover #blank{
+    top: -1.8vw;
+}
+#outtop{
+    top: -20vw;
+    position: relative;
+    z-index: 0;
+}
+#outbottom{
+    position: relative;
+    top: -20.3vw;
+}
+#letter h2{
+    font-family: romy;
+    position: relative;
+    z-index: 3;
+    top: -16vw;
+    left: 5vw;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
+}
+#letter:hover #dear{
+    top: -20vw;
+}
+#letter h3{
+    font-family: romy;
+    position: relative;
+    z-index: 3;
+    top: -15vw;
+    left: 5vw;
+    font-size: 1.5vw;
+    font-weight: 100;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
+
+}
+#letter:hover #forum{
+    top: -19vw;
+}
+#letter h3 input{
+    border: none;
+    border-bottom: 0.1vw solid gold;
+    outline: none;
+    background-color: transparent;
+    font-family: romy;
+    font-size: 1.3vw;
+}
+#letter h3 #name{
+    width: 13vw;
+}
+#letter h3 #mail{
+    width: 12vw;
+}
+#letter h3 .desc{
+    width: 23vw;
+}
+#letter #send{
+    position: relative;
+    z-index: 3;
+    top: -13vw;
+    left: 13vw;
+    font-size: 1.3vw;
+    font-family: gs;
+    font-weight: 100;
+    border-radius: 1.3vw;
+    border: none;
+    background-color: rgb(8, 211, 8);
+    color: white;
+    padding: 0.5vw 1.3vw;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
+}
+#letter:hover #send{
+    top: -17vw;
+}
+#contact{
+    margin-bottom: 11vw;
+}
+#contact h1{
+    font-family: gs b;
+    color: rgba(208, 207, 207, 0.611);
+
+}
+#contact h3{
+    color: white;
+    font-family: gs;
+    font-weight: 100;
+
+}
+#contact #cont{
+    margin-bottom: 0.6vw;
+    
+}
+#contact p{
+    width: 17vw;
+    font-family: gs;
+    font-weight: 100;
+    color: rgba(208, 207, 207, 0.611);
+}
+#contact #firstpara{
+    margin-bottom: 1.4vw;
+}
+#contact #social{
+    margin-top: 2.3vw;
+}
+#contact #secondpara{
+    margin-top: 0.8vw;
+}
+#contact #icdiv{
+    display: flex;
+    gap: 3vw;
+    margin-left: 2vw;
+}
+#contact .ic{
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+    margin-top: 1.2vw;
+}
+#contact .ic a{
+    text-decoration: none;
+    color: white;
+    font-family: gs;
+    font-weight: 100;
+    font-size: 1.3vw;
+}
+#contact #address{
+    display: flex;
+    flex-direction: column;
+    gap: 0.7vw;
+}
+#contact img{
+    margin-bottom: -11.4vw;
+}
+#footer{
+    width: 100vw;
+    background-color: black;
+    height: 3.1vw;
+    margin-top: -7vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#footer small{
+    color: rgb(198, 198, 198);
+    font-family: gs;
+
+}
+#contact i{
+    font-size: 1.4vw;
+    color: white;
+}
+.cc{
+    display: flex;
+    gap: 0.5vw;
+}
